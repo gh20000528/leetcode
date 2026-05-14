@@ -13,6 +13,7 @@ class Solution:
     def arrayPairSum(self, nums: List[int]) -> int:
         nums.sort()
         ans = 0
+        # range(start, stop, step 每次跳幾格)
         for i in range(0, len(nums), 2):
             ans += min(nums[i], nums[i + 1])
 
